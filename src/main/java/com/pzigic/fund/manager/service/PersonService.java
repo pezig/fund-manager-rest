@@ -49,7 +49,6 @@ public class PersonService {
         return personRepository.save(xPerson);
     }
 
-
     /**
      * update all field in person by id
      *

@@ -32,11 +32,6 @@ class PersonController {
         return ResponseEntity.ok(personService.findOneById(id));
     }
 
-    @GetMapping(value = "/test")
-    ResponseEntity<?> test() {
-        return ResponseEntity.ok("test ok");
-    }
-
     @PostMapping
     ResponseDTO<PersonDTO> create(@RequestDTO(PersonDTO.class) @Validated Person person) {
         return ResponseDTO.accepted().convertTo(personService.create(person), PersonDTO.class);
