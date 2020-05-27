@@ -15,7 +15,7 @@ public class Client {
     @Setter
     @Getter
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long client_id;
 
     @Setter
