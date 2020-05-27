@@ -1,6 +1,8 @@
 package com.pzigic.fund.manager.config;
 
 import com.pzigic.fund.manager.common.bind.DTOMethodProcessor;
+import org.apache.tomcat.util.descriptor.web.SecurityCollection;
+import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -8,6 +10,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import javax.naming.Context;
 import javax.sql.DataSource;
 import java.util.List;
 
@@ -29,6 +32,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
             }
         };
     }
-
 
 }

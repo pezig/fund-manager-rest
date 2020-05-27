@@ -2,9 +2,7 @@ package com.pzigic.fund.manager.service;
 
 import com.pzigic.fund.manager.common.util.Copy;
 import com.pzigic.fund.manager.entity.Client;
-import com.pzigic.fund.manager.entity.Person;
 import com.pzigic.fund.manager.repository.ClientRepository;
-import com.pzigic.fund.manager.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
